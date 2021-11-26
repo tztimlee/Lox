@@ -1,9 +1,5 @@
+use std::env;
 fn main() {
-    let x = "hello";
-
-    let y = 24;
-
-
-    println!("Hello, world!");
-    println!("{} {}", x, y);
+     let args: Vec<String> = env::args().collect();
+     println!("{:?}", args);
 }
